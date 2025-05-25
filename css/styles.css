@@ -1,0 +1,365 @@
+body {
+  background-color: rgb(255, 250, 212);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+
+#nav {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 8px rgb(86, 62, 71);
+  font-family: "Rubik", "Trebuchet MS", sans-serif;
+  background-color: rgb(255, 250, 212);
+}
+section#leftLinks {
+  display: flex;
+  align-items: center;
+}
+#leftLinks #logoSection {
+  margin: 0 1.2em;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  width: 100%;
+}
+
+#leftLinks ul {
+  display: flex;
+}
+#leftLinks ul li {
+  margin: 1em;
+}
+#leftLinks a {
+  position: relative;
+  font-size: 1.5vw;
+  color: rgb(86, 62, 71);
+}
+#leftLinks a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 1px;
+  transition: 0.2s;
+}
+#leftLinks a:hover::after {
+  width: 100%;
+  background-color: rgb(75, 132, 129);
+}
+
+section#rightLinks {
+  margin-right: 0.5em;
+  width: 70%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#rightLinks ul {
+  display: flex;
+}
+#rightLinks ul li {
+  list-style-type: none;
+  margin: 0.5em 0.9em;
+  font-size: 0.8em;
+}
+#rightLinks a {
+  position: relative;
+  font-size: 1.1vw;
+  color: rgb(86, 62, 71);
+}
+#rightLinks a:hover {
+  color: rgb(135, 42, 70);
+}
+
+.navIcon {
+  margin-right: 0.4em;
+  transform: scale(1.3);
+  filter: invert(20%) sepia(81%) saturate(1040%) hue-rotate(305deg)
+    brightness(89%) contrast(93%);
+}
+
+/* Row 1 (Beefy Glory) */
+
+#beefyGlorySection {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(126, 126, 126);
+  background-image: url("../images/stacked_burger.jpeg");
+  background-size: auto;
+  background-position: -255px -300px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  font-family: "Rubik", "Trebuchet MS", sans-serif;
+}
+#beefyGloryAd {
+  margin-left: 12%;
+  width: 25%;
+  color: white;
+}
+p#new {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  display: inline-block;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 200;
+  border: 4px solid white;
+  border-radius: 10%;
+}
+
+p#beefy {
+  margin: 0;
+  font-family: "Rowdies", sans-serif;
+  font-size: 1.5em;
+}
+p#bacony {
+  margin: 0;
+  line-height: 0.8em;
+  font-family: "Rowdies", sans-serif;
+  font-size: 2em;
+}
+p#glory {
+  margin: 0;
+  line-height: 1em;
+  font-family: "Rowdies", sans-serif;
+  font-size: 3em;
+}
+p#touched {
+  margin: 1em 0;
+  letter-spacing: 0.1em;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+p#beefyGloryDescription {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+}
+button.orderNowBtn {
+  margin-top: 0.5em;
+  padding: 0.8em;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 200;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgb(92, 22, 43);
+  color: rgb(255, 255, 255);
+}
+button.orderNowBtn:hover {
+  cursor: pointer;
+  margin-top: 0.5em;
+  padding: 0.8em;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgb(110, 25, 51);
+  transition: 0.2s;
+}
+
+/* Row 2 (Fan Favorites) */
+
+section#fanFavoritesSection {
+  padding-top: 1.25em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Rubik", "Trebuchet MS", sans-serif;
+}
+
+section#fanFavoritesSection h1 {
+  font-size: 5vh;
+  color: rgb(92, 22, 43);
+}
+
+section#fanFavorites {
+  margin: 1.3em 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.fanFavorite {
+  margin: 0 0.9em;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img.fanFavoriteImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+section.fanFavoriteDescription {
+  margin-top: 0.8em;
+  text-align: center;
+  font-size: 1vw;
+}
+.fanFavoriteName {
+  color: rgb(92, 22, 42);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* Row 3 (Rewards) */
+
+section#rewardsSection {
+  height: 65vh;
+  padding: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237, 232, 190);
+}
+
+section#rewardsThisCouldBeYou {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#rewardsArrow {
+  width: 50%;
+  position: relative;
+  bottom: 50px;
+}
+#thisCouldBeYouParagraph {
+  position: relative;
+  bottom: 85px;
+  text-align: center;
+  font-family: "Rubik", "Trebuchet MS", sans-serif;
+}
+#thisCouldBeYouParagraph h1 {
+  color: rgb(92, 22, 42);
+  font-family: "Rowdies", sans-serif;
+  font-size: 2.5vw;
+}
+
+section#rewardsImageContainer {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+}
+
+#rewardsImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+section#rewardsDescription {
+  width: 28%;
+  height: 75%;
+  margin-top: 1%;
+  padding: 2.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3em;
+  font-family: "Rubik", "Trebuchet MS", sans-serif;
+  font-size: 1.3vw;
+  text-align: center;
+}
+#signUpNowBtn {
+  width: 15vw;
+  margin: 5% 25%;
+  border: none;
+  background-color: rgb(213, 118, 24);
+}
+#signUpNowBtn:hover {
+  background-color: rgb(223, 137, 51);
+}
+#moreInfoNowBtn {
+  width: 15vw;
+  margin: 5% 25%;
+  border: none;
+  background-color: rgb(75, 132, 129);
+}
+#moreInfoNowBtn:hover {
+  background-color: rgb(94, 160, 156);
+}
+
+/* Footer */
+
+footer {
+  margin: 0;
+  padding: 1em;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Rubik", "Trebuchet MS", sans-serif;
+  background-color: rgb(92, 22, 43);
+  color: rgb(224, 217, 164);
+}
+
+section#leftFooterSide {
+  width: 50%;
+}
+#missionStatement {
+  width: 75%;
+  height: 100%;
+  line-height: 1.5em;
+  font-size: 1.2vw;
+}
+#missionStatement h1 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+section#rightFooterSide {
+  display: flex;
+}
+
+.rightFooterNav {
+  margin: 1em 1em;
+  position: relative;
+  bottom: 10px;
+  line-height: 2em;
+  font-size: 1.3vw;
+}
+
+.rightFooterNav h1 {
+  margin: 0.5em 0;
+  font-family: "Rowdies", sans-serif;
+  font-size: 1.4em;
+  font-weight: 200;
+}
+
+.rightFooterNav a {
+  position: relative;
+  color: white;
+}
+.rightFooterNav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  left: 0;
+  bottom: 1px;
+  transition: 0.2s;
+}
+.rightFooterNav a:hover::after {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
